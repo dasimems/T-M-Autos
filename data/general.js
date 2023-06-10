@@ -1,30 +1,33 @@
+"use client";
 import { GalleryImageFive, GalleryImageFour, GalleryImageOne, GalleryImageSix, GalleryImageThree, GalleryImageTwo } from "@/assets/images";
+import { Home, People, Work } from "react-iconly";
+import {FaCar} from "react-icons/fa"
 
 export const Routes = {
     Home: {
         path: "#",
         label: "Home",
         showIn: ["nav"],
-        Icon: ""
+        Icon: Home
     },
 
      Services: {
         path: "#services",
         label: "Services",
         showIn: ["nav"],
-        Icon: ""
+        Icon: Work
     },
     HistoricalCars: {
         path: "#historical-cars",
         label: "Historical Cars",
         showIn: ["nav"],
-        Icon: ""
+        Icon: FaCar
     },
     About: {
         path: "#about",
         label: "About",
         showIn: ["nav"],
-        Icon: ""
+        Icon: People
     }
 
 },

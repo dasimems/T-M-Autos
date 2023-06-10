@@ -1,3 +1,4 @@
+"use client";
 import { BackgroundImage } from "@/assets/images";
 import { PageContainer } from "../..";
 import { ServiceIcon } from "@/assets/icons";
@@ -17,7 +18,7 @@ const Service = () => {
     >
       <div className="flex gap-4 items-center text-secondary uppercase text-xl md:text-3xl">
         <h2>Repairs</h2>
-        <Image src={ServiceIcon} className="" alt="" />
+        <Image src={ServiceIcon} className="w-[30px] sm:w-[50px] md:w-[60px]" alt="" />
         <h2>Services</h2>
       </div>
 
@@ -26,7 +27,7 @@ const Service = () => {
         what you need below, please call and ask for Thomas Chiofalo.
       </p>
 
-      <div className="relative after:w-[50px] after:h-[3px] after:bg-white after:rounded-full after:absolute after:left-1/2 after:-translate-x-[70%] after:top-0 flex gap-6 md:justify-center py-10 text-lg">
+      <div className="relative after:w-[50px] after:h-[3px] after:bg-white after:rounded-full after:absolute after:left-1/2 after:-translate-x-[70%] after:top-0 flex flex-col md:flex-row gap-6 md:justify-center py-10 text-lg">
         <ul className="flex flex-col gap-4 md:items-end">
           {services.slice(0, parseInt(services.length/2)).map((service, index) =>
             <li key={index}>
@@ -34,7 +35,7 @@ const Service = () => {
             </li>
           )}
         </ul>
-        <div className="w-[3px] bg-white rounded-full" />
+        <div className="md:w-[3px] h-[3px] md:h-[unset] md:block bg-white rounded-full" />
         <ul className="flex flex-col gap-4 md:items-start">
             {services.slice(parseInt(services.length/2), ).map((service, index) =>
             <li key={index}>

@@ -6,7 +6,7 @@ const About = () => {
 
             <h2 className="text-secondary uppercase text-lg relative text-center md:text-2xl after:w-[50px] after:h-[3px] after:bg-white after:rounded-full after:absolute after:left-1/2 after:-translate-x-[50%] after:-bottom-6">ABOUT T&M</h2>
 
-            <div className="flex gap-10 items-center">
+            <div className="flex flex-col md:flex-row gap-10 items-center">
 
                 <div className="h-[300px] bg-slate-200 w-[200px]">
 

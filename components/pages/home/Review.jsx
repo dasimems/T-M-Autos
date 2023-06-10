@@ -1,3 +1,4 @@
+"use client";
 import { BannerBackground } from "@/assets/images";
 import { PageContainer } from "@/components";
 import ReviewCard from "@/components/general/ReviewCard";

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const HomeBanner = () => {
     return(
-        <PageContainer className="min-h-screen relative flex items-center justify-center py-10">
+        <PageContainer className="min-h-screen relative flex items-center justify-center py-[100px] md:py-[80px]">
 
             <Image src={BannerBackground} fill className="object-cover bg-fixed" alt="banner" />
             <div className="w-full h-full absolute top-0 left-0 bg-[rgba(255,255,255,.6)]">
